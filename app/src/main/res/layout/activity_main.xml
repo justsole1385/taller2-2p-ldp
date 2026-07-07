@@ -2,12 +2,15 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp">
+    android:background="@color/fondo_app"
+    android:fillViewport="true"
+    android:padding="18dp">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:background="@drawable/fondo_panel">
 
         <TextView
             android:layout_width="match_parent"
@@ -15,7 +18,9 @@
             android:text="Encuesta de Satisfacci&#243;n"
             android:textSize="24sp"
             android:textStyle="bold"
+            android:textColor="@color/texto_principal"
             android:gravity="center"
+            android:paddingBottom="6dp"
             android:layout_marginBottom="24dp" />
 
         <LinearLayout
@@ -29,6 +34,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Guardar Encuesta"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:background="@drawable/boton_principal"
+            android:minHeight="48dp"
             android:onClick="guardar"
             android:layout_marginTop="24dp" />
 
@@ -37,6 +46,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Ver Historial"
+            android:textColor="@color/primario_oscuro"
+            android:textStyle="bold"
+            android:background="@drawable/boton_secundario"
+            android:minHeight="48dp"
             android:onClick="listar"
             android:layout_marginTop="8dp" />
 

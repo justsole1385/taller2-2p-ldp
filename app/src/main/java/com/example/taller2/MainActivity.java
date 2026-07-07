@@ -4,6 +4,7 @@ import android.content.ContentValues;
 import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -68,12 +69,22 @@ public class MainActivity extends AppCompatActivity {
         TextView txtPregunta = new TextView(this);
         txtPregunta.setText(texto);
         txtPregunta.setTextSize(18);
+        txtPregunta.setTextColor(Color.rgb(38, 50, 56));
         txtPregunta.setPadding(0, 16, 0, 8);
         containerPreguntas.addView(txtPregunta);
 
         EditText txtRespuesta = new EditText(this);
         txtRespuesta.setHint("Escriba su respuesta aqui");
-        containerPreguntas.addView(txtRespuesta);
+        txtRespuesta.setTextColor(Color.rgb(38, 50, 56));
+        txtRespuesta.setHintTextColor(Color.rgb(96, 125, 139));
+        txtRespuesta.setBackgroundResource(R.drawable.fondo_campo);
+
+        LinearLayout.LayoutParams parametros = new LinearLayout.LayoutParams(
+                LinearLayout.LayoutParams.MATCH_PARENT,
+                LinearLayout.LayoutParams.WRAP_CONTENT
+        );
+        parametros.setMargins(0, 0, 0, 6);
+        containerPreguntas.addView(txtRespuesta, parametros);
 
         listaIds.add(id);
         listaRespuestas.add(txtRespuesta);

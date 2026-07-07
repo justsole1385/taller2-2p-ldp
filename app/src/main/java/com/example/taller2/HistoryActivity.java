@@ -59,7 +59,7 @@ public class HistoryActivity extends AppCompatActivity {
             datos.add("No hay encuestas guardadas");
         }
 
-        ArrayAdapter<String> adaptador = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, datos);
+        ArrayAdapter<String> adaptador = new ArrayAdapter<String>(this, R.layout.item_historial, datos);
         lvHistorial.setAdapter(adaptador);
     }
 

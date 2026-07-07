@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="Theme.Taller2" parent="Theme.AppCompat.Light.DarkActionBar" />
+    <style name="Theme.Taller2" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/primario</item>
+        <item name="colorPrimaryDark">@color/primario_oscuro</item>
+        <item name="colorAccent">@color/primario</item>
+        <item name="android:windowBackground">@color/fondo_app</item>
+    </style>
 </resources>
